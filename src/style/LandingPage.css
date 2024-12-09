@@ -1,6 +1,7 @@
 .landing-page-container {
     background-color: rgba(238, 238, 252, 0.592);
     min-height: 100vh;
+   
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -10,10 +11,11 @@
   }
   
   .landing-page-content {
+    width: 2000px;
     background: url('/public/girl1.jpg') no-repeat center center fixed;
     background-size: cover; /* خلفية داكنة مع شفافية */
     margin-top: 100px;
-    padding: 100px;
+    padding: 150px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
@@ -59,4 +61,23 @@
       font-size: 14px;
     }
   }
-  
+  .card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  border: 2px solid #003366;
+  border-radius: 10px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.navbar-logo1 {
+  max-width: 150px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid #003366;
+  margin: 0 auto 20px; 
+  display: block; 
+}

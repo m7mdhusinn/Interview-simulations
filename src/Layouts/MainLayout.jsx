@@ -68,14 +68,14 @@ const MainLayout = ({ children }) => {
       <main>{children}</main>
 
       {/* Footer */}
-      <footer className="footer">
+      {/* <footer className="footer">
         <div className="footer-content">
           <div className="footer-logo">
             <img src="/Free.png" alt="Logo" className="footer-logo-img" />
           </div>
 
           {/* أيقونات التواصل الاجتماعي */}
-          <div className="footer-social-icons">
+          {/* <div className="footer-social-icons">
             <a href="#" className="social-icon">
               <i className="fab fa-facebook-f"></i>
             </a>
@@ -88,14 +88,114 @@ const MainLayout = ({ children }) => {
             <a href="#" className="social-icon">
               <i className="fab fa-linkedin-in"></i>
             </a>
-          </div>
+          </div> */}
 
           {/* حقوق النشر */}
-          <div className="footer-rights">
+          {/* <div className="footer-rights">
             <p>© 2024 جميع الحقوق محفوظة</p>
           </div>
+        </div> */}
+      {/* </footer> */}
+      <footer
+  className="text-center"
+  style={{
+    backgroundColor: " rgba(1, 6, 40, 0.851)",
+    color: "#fff",
+    padding: "20px 0",
+    fontSize: "14px",
+  }}
+>
+  <div className="container p-4">
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+        gap: "10px",
+        marginBottom: "10px",
+      }}
+    >
+      <div style={{ textAlign: "center" }}>
+        <img
+          src="/Free.png"
+          height={50}
+          width={50}
+          alt="Logo"
+          style={{ borderRadius: "10px", marginBottom: "10px" }}
+        />
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#ccc",
+            marginBottom: "10px",
+            lineHeight: "1.5",
+            maxWidth: "300px",
+            margin: "0 auto",
+          }}
+        >
+          Prepare for your professional journey with AI-driven interview
+          guidance.
+        </p>
+      </div>
+
+      <section style={{ textAlign: "center", marginTop: "10px" }}>
+        <div>
+          <a
+            className="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+          >
+            <i className="fab fa-twitter"></i>
+          </a>
+
+          <a
+            className="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+          >
+            <i className="fab fa-google"></i>
+          </a>
+
+          <a
+            className="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+          >
+            <i className="fab fa-instagram"></i>
+          </a>
+
+          <a
+            className="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+          >
+            <i className="fab fa-linkedin-in"></i>
+          </a>
+
+          <a
+            className="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+          >
+            <i className="fab fa-github"></i>
+          </a>
         </div>
-      </footer>
+      </section>
+    </div>
+
+    <div
+      className="text-center p-2"
+      style={{
+        backgroundColor: "rgba(255, 255, 255, 0.1)",
+        fontSize: "14px",
+        marginTop: "10px",
+      }}
+    >
+      © 2024 Smart Interview. All rights reserved
+    </div>
+  </div>
+</footer>
     </>
   );
 };

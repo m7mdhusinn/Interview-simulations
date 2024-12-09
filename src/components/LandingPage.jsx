@@ -9,23 +9,23 @@ const LandingPage = () => {
       <MainLayout>
         <div className="landing-page-container ">
           <div className="text-center landing-page-content ">
-            <img
-              src="/Free.png"
-              alt="Logo"
-              className="navbar-logo"
-             
-            />
-            <h1 className="display-4 fw-bold text-dark">Welcome to Smart Interview</h1>
-            <div className="col-lg-8 mx-auto">
-              <p className="lead mb-4 text-light">
-                في عالم العمل اليوم، تعتبر المقابلات الشخصية خطوة حاسمة نحو تحقيق أهدافك المهنية.
-                هنا في Smart Interview، نقدم لكم تجربة محاكاة متكاملة تساعدكم على الاستعداد للمقابلات بثقة واحترافية.
-              </p>
-
-              <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <Link to="/question" className="btn btn-primary btn-lg px-4 gap-3">
-                  ابدأ
-                </Link>
+            <div className="card  shadow-lg p-4 mb-4 rounded">
+              <img
+                src="/Free.png"
+                alt="Logo"
+                className="navbar-logo1 card-img-top"
+              />
+              <div className="card-body">
+                <h1 className="display-4 fw-bold text-dark">Welcome to Smart Interview</h1>
+                <p className="lead mb-4 text-dark">
+                  في عالم العمل اليوم، تعتبر المقابلات الشخصية خطوة حاسمة نحو تحقيق أهدافك المهنية.
+                  هنا في Smart Interview، نقدم لكم تجربة محاكاة متكاملة تساعدكم على الاستعداد للمقابلات بثقة واحترافية.
+                </p>
+                <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                  <Link to="/question" className="btn btn-primary btn-lg px-4 gap-3">
+                    ابدأ
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

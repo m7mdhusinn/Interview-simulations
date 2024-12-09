@@ -5,7 +5,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import LandingPage from './components/LandingPage';
 import QuestionPage from './components/QuestionPage';
 import ResultPage from './components/ResultPage';
-import AboutPage from './components/AboutPage';
+import AboutPage from './components/AboutPage'; 
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   return (
