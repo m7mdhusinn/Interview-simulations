@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from pyarabic.araby import strip_tashkeel, normalize_hamza
 import re
-
+from fuzzywuzzy import fuzz
 # إعداد Flask
 app = Flask(__name__)
 
@@ -60,8 +60,11 @@ def evaluate_answer_logic(question_id, answer_text):
     # استخراج الكلمات المفتاحية للسؤال
     relevant_keywords = keywords.get(question_id, [])
     
-    # حساب عدد الكلمات المفتاحية الموجودة في النص
-    score = sum(1 for keyword in relevant_keywords if keyword in clean_text)
+    # حساب عدد الكلمات المفتاحية الموجودة في النص باستخدام تعبيرات عادية (Regex)
+    score = 0
+    for keyword in relevant_keywords:
+        if fuzz.partial_ratio(keyword, clean_text) > 70:  # تطابق جزئي مع حد أدنى
+            score += 1
     
     # تعيين درجة بين 1 و 10
     score = min(10, score)  # الحد الأقصى للدرجة هو 10

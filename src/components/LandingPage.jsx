@@ -9,13 +9,13 @@ const LandingPage = () => {
       <MainLayout>
         <div className="landing-page-container ">
           <div className="text-center landing-page-content ">
-            <div className="card  shadow-lg p-4 mb-4 rounded">
+            <div className="card card2 shadow-lg p-4 mb-4 rounded">
               <img
                 src="/Free.png"
                 alt="Logo"
                 className="navbar-logo1 card-img-top"
               />
-              <div className="card-body">
+              <div className="card-body2">
                 <h1 className="display-4 fw-bold text-dark">Welcome to Smart Interview</h1>
                 <p className="lead mb-4 text-dark">
                   في عالم العمل اليوم، تعتبر المقابلات الشخصية خطوة حاسمة نحو تحقيق أهدافك المهنية.

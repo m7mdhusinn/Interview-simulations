@@ -23,10 +23,10 @@ const ResultPage = () => {
         {evaluationResults.length > 0 ? (
           <div className="result-cards">
             {evaluationResults.map((result, index) => (
-              <div key={index} className="card mb-4 shadow">
+              <div key={index} className="card card1 mb-4 shadow ">
                 <div className="card-body">
-                  <h5 className="card-title">سؤال {index + 1}</h5>
-                  <p className="card-text">
+                  <h5 className="card-title1">سؤال {index + 1}</h5>
+                  <p className="card-text1">
                     <strong>الدرجة: </strong>
                     <span
                       className={`score ${

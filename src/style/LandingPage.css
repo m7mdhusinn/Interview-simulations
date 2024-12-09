@@ -61,7 +61,7 @@
       font-size: 14px;
     }
   }
-  .card {
+  .card2 {
   max-width: 1000px;
   margin: 0 auto;
   background-color: #f8f9fa;
@@ -69,7 +69,7 @@
   border-radius: 10px;
 }
 
-.card-body {
+.card-body2 {
   text-align: center;
 }
 

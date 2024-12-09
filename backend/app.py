@@ -177,6 +177,7 @@ def get_questions():
         result = [{"QuestionID": q.QuestionID, "QuestionText": q.QuestionText} for q in questions]
         return jsonify(result)
     except Exception as e:
+        logging.error(f"Error getting questions: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
 # API لحفظ الإجابات وتقييمها
