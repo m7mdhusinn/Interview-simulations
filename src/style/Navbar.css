@@ -1,0 +1,111 @@
+
+/* تصميم ثابت للـ navbar */
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(1, 6, 40, 0.851);
+    transition: background-color 0.5s, opacity 0.5s;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-container.navbar-show {
+    opacity: 1;
+  }
+  
+  .navbar-container.navbar-hide {
+    opacity: 0.5;
+  }
+  
+  .navbar-logo {
+    height: 70px;
+    width: auto;
+    border-radius: 10px;
+    border: 2px solid #003366;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    color: white !important;
+  }
+  
+  /* إضافة التنسيق لوسط الـ navbar */
+  .navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    opacity: 45%;
+  }
+  
+  .navbar-center .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-center .nav-link:hover {
+    color: #f39c12; /* تغيير اللون عند التمرير */
+  }
+  @media (max-width: 768px) {
+    .fixed-navbar {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 10px 0;
+    }}
+  
+  /* تصميم footer */
+  .footer {
+    background-color:rgba(1, 6, 40, 0.851);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-logo-img {
+    height: 50px;
+    width: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #003366;
+  }
+  
+  .footer-social-icons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icon {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: #f39c12; /* تغيير اللون عند التمرير */
+  }
+  
+  .footer-rights p {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* إضافة تنسيق للأيقونات الاجتماعية */
+  .fab {
+    font-size: 24px;
+  }
+  

@@ -1,0 +1,62 @@
+.landing-page-container {
+    background-color: rgba(238, 238, 252, 0.592);
+    min-height: 100vh;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+  
+  .landing-page-content {
+    background: url('/public/girl1.jpg') no-repeat center center fixed;
+    background-size: cover; /* خلفية داكنة مع شفافية */
+    margin-top: 100px;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  
+  .display-4 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #f1f1f1a5;
+    margin-bottom: 20px;
+  }
+  
+  .text-light {
+    color: #f1f1f18f;
+  }
+  
+  .btn-primary {
+    background-color: #003366;
+    border-color: #003366;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #005b99;
+    border-color: #005b99;
+  }
+  
+  @media (max-width: 768px) {
+    .landing-page-content {
+      padding: 20px;
+    }
+  
+    .display-4 {
+      font-size: 28px;
+    }
+  
+    .lead {
+      font-size: 14px;
+    }
+  }
+  

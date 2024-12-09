@@ -1,0 +1,50 @@
+.result-page {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #f9f9f9, #e0e7ff);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+  
+  .result-page h2 {
+    color: #333;
+    font-weight: bold;
+    
+  }
+  
+  .result-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .card {
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(to bottom right, #ffffff, #e8f0ff);
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1a73e8;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  .score {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .low-score {
+    color: #e74c3c;
+  }
+  
+  .high-score {
+    color: #27ae60;
+  }
+  
